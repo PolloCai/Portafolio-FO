@@ -327,14 +327,14 @@ html {
     margin-top: 5rem;
 }
 
-.card{
+.cards{
     width: 33.33%;
     height: auto;
     text-align: center;
     padding: 3rem;
 }
 
-.card--subtitulo {
+.cards--subtitulo {
     font-size: 3.5rem;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
@@ -347,13 +347,13 @@ html {
     align-items: center;
     justify-content: center;
 }
-.card--img {
+.cards--img {
     width: 10rem;
     height: 10rem;
 }   
 
 
-.card--texto {
+.cards--texto {
     font-size: 1.3rem;
     color: #c7d1d9;
     width: 100%;
@@ -643,18 +643,18 @@ html {
         padding-right: 2rem;
     }
 
-    .card {
+    .cards {
         padding: 0.5rem;
         height: 100%;
     }
 
-    .card--subtitulo {
+    .cards--subtitulo {
         padding: 0;
         height: 10rem;
         font-size: 3rem;
     }
 
-    .card--texto {
+    .cards--texto {
         width: 90%;
         margin: 0;
         padding: 0;
@@ -812,17 +812,17 @@ html {
         grid-template-rows: repeat(3, 1fr);
     }
 
-    .card {
+    .cards {
         width: 100%;
         padding-top: 1rem;
     }
 
-    .card--subtitulo {
+    .cards--subtitulo {
         padding: 0;
         height: auto;
     }
 
-    .card--texto {
+    .cards--texto {
         margin-bottom: 1.5rem;
     }
 
