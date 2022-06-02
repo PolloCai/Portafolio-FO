@@ -19,9 +19,8 @@
     <header class="header container-fluid">
         <div class="header--contenedor row">
             <div class="header--logo col-12 col-md-3 d-flex justify-content-center">
-                <a href="./index.html"><img src="./assets/logo/logo.png" alt="logo"></a>
+                <a href="#bienvenidos"><img src="./assets/logo/logo.png" alt="logo"></a>
             </div>
-
                 <nav class="navbar navbar-expand-md navbar-dark bg-transparent col-12 col-md-6">
                     <div class="container-fluid d-flex justify-content-center m-0 p-0">
                         <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,22 +29,21 @@
                         <div class="collapse navbar-collapse container-fluid m-0 p-0" id="navbarSupportedContent">
                             <ul class=" header--nav navbar-nav me-auto row d-flex flex-row mt-0 p-0 container-fluid">
                                 <li class="nav-item col-12 col-md-3">
-                                    <a class="nav-link header--links text-center" href="#"><span class="icon-wink2"></span> Sobre Mi</a>
+                                    <a class="nav-link header--links text-center" href="#sobremi"><span class="icon-wink2"></span> Sobre Mi</a>
                                 </li>
                                 <li class="nav-item col-12 col-md-3">
-                                    <a class="nav-link header--links text-center" href="#"><span class="icon-briefcase"></span> Servicios</a>
+                                    <a class="nav-link header--links text-center" href="#servicios"><span class="icon-briefcase"></span> Servicios</a>
                                 </li>
                                 <li class="nav-item col-12 col-md-3">
-                                    <a class="nav-link header--links text-center" href="#"><span class="icon-rocket"></span> Proyecto</a>
+                                    <a class="nav-link header--links text-center" href="#proyectos"><span class="icon-rocket"></span> Proyecto</a>
                                 </li>
                                 <li class="nav-item col-12 col-md-3">
-                                    <a class="nav-link header--links text-center" href="#"><span class="icon-mail3"></span> Contacto</a>
+                                    <a class="nav-link header--links text-center" href="#contacto"><span class="icon-mail3"></span> Contacto</a>
                                 </li>    
                             </ul>
                         </div>
                     </div>    
                 </nav>
-    
             <div class="header--redes col-12 col-md-3 d-flex flex-row align-items-center justify-content-center ">
                 <a href="https://www.facebook.com/pollo.ordoqui/"><img src="./assets/redes/facebook.png" alt="Red Facebook" class="ms-2"></a>
                 <a href="https://www.instagram.com/polloordoqui6/"><img src="./assets/redes/instagram.png" alt="Red Instagram" class="ms-2"></a>
@@ -56,7 +54,7 @@
     </header>
 
     <main class="main container-fluid m-0 p-0">
-        <section>
+        <section id="bienvenidos">
             <div class="main--bienvenidos container-fluid d-flex vh-100 justify-content-center justify-content-md-end align-items-center">
                 <div class="w-50 h-75 centrado me-md-5">
                     <h1 class="main--titulo main--titulo__Bienvenidos row col-12 justify-content-center mt-5 mb-5">Bienvenidos</h1>
@@ -68,22 +66,21 @@
             </div>
         </section>
 
-        <section class="sobremi mt-5 d-flex">
+        <section id="sobremi" class="sobremi mt-5 d-flex">
             <div class="main--sobreMi container">
                 <div class="row">
-                    <div class="col-md-4 d-flex-inline justify-content-md-end align-self-md-center">
+                    <div class="col-md-4 d-flex-inline justify-content-md-end align-self-md-start col-12">
                         <h2 class="main--titulo main--titulo__Sobremi  text-center text-md-end mt-5">Sobre Mi</h2>
                         <p class="main--texto main--texto__Sobremi text-center mt-5 text-md-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusantium omnis quos vitae distinctio qui laborum architecto optio quia totam!</p>
                     </div>
-                    <div class="d-flex col-12 mt-5 col-md-8">
-                        <img src="./assets/mohammad-rahmani-_Fx34KeqIEw-unsplash.jpg" alt="programando chico" class="main--img__Sobremi2">
-                        <img src="./assets/Ps_overlay_Red_Smoke-(22)1.jpg" alt="programando grande"  class="main--img__Sobremi ">
+                    <div class=" container-fluid img--atras d-flex col-12 mt-5 col-md-8">
+                        <img src="./assets/mohammad-rahmani-_Fx34KeqIEw-unsplash.jpg" alt="programando grande"  class="img--delante img-fluid">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="servicios container-fluid">
+        <section id="servicios" class="servicios container-fluid">
             <div class="main--servicios col-12">
                 <h2 class="main--titulo main--titulo__Servicios col-12 text-center">Servicios</h2>
                 <p class="main--texto main--texto__Servicios col-12 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quidem aliquid iusto cupiditate ipsam placeat dignissimos, necessitatibus harum! Voluptas, voluptates!</p>
@@ -107,7 +104,7 @@
             </div>
         </section>
         
-        <section class="proyectos">
+        <section id="proyectos" class="main--proyectos">
             <h2 class="main--titulo main--titulo__Contacto">Proyectos</h2>
             <h3 class="subtitulo"> {/} Amo Lo Que Hago {/}</h3>
             <div class="contenedor--proyectos animate__animated animate__bounceInUp animate__delay-3s">
@@ -120,7 +117,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="contacto">
             <h2 class="main--titulo main--titulo__Contacto">Contacto</h2>
             <div class="contenedor--contacto">
                 <form action="" method="" enctype="">
