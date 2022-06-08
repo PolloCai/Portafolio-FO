@@ -1,0 +1,115 @@
+$backgroundColor: #1c2026;
+$boxShadow: 0 1.5px 6.5px 0 #d10404;
+$backgroundBtn: #1f1f1f;
+$backgroundBtn1: #ff6701; 
+$textoBtn: #eaeaea;
+
+:root {
+    --hf: #1c2026;
+    --celeste: #038c7f;
+    --celSecond:#027373;
+    --blanco: #f2e7dc;
+    --blancoSecond: #a9d9d0; 
+    --blancoThird: #c7d1d9;
+    --negro: #0d0d0d;
+    --bgInfocontacto: #121416;
+    --boxShadow: 0 1.5px 6.5px 0 #027373;
+}
+
+@function size($value){
+    @return $value * $unit;
+}
+
+@mixin titulo ($tamaño){
+    color: var(--blancoSecond);
+    font-family: 'Roboto Mono', monospace;
+    font-size: $tamaño;
+}
+
+@mixin titulo1 ($tamaño){
+    color: var(--celeste);
+    font-family: 'Roboto Mono', monospace;
+    font-size: $tamaño;
+    text-align: center;
+}
+
+@mixin reset-pm {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin btn ($background-color , $color , $bold ) {
+    background-color: $background-color;
+    color: $color;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5rem;
+    text-decoration: none;
+    padding: 4px 8px;
+    transition: background-color 1.5s;
+
+    @if ($bold == 'true'){
+        font-weight: bolder;
+    }
+}
+
+@mixin grid ( $columnas ,$filas, $espacio, $just, $align ){
+    display: grid;
+    grid-template-columns: repeat( $columnas, 1fr );
+    grid-template-rows: repeat( $filas, 1fr);
+    gap: $espacio;
+    justify-content: $just;
+    align-items: $align;
+}
+
+
+@mixin flexible( $dis , $direction , $corte, $just, $align ) {
+    display: $dis;
+    flex-direction: $direction;
+    flex-wrap: $corte;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@mixin parrafo {
+    color: var(--blanco);
+    font-size: 1.8rem;
+    font-family: 'EB Garamond', serif;
+    line-height: 2.1rem;
+    letter-spacing: 0.09rem;
+    word-spacing: 0.1rem;
+    text-align: center;
+    height: auto;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+}
+
+@mixin imagenesVenta {
+    width: 25rem;
+    height: 15rem;
+    margin: 1.5rem;
+    border: #ff6701 solid 0.15rem;
+    border-radius: 0.15rem;
+    object-fit: cover;
+}
+
+@mixin fotoAutos ($alto, $ancho){
+    object-fit: cover;
+    width: $alto;
+    height: $ancho;
+    margin: 1.5rem;
+    border: #ff6701 solid 0.15rem;
+    border-radius: 0.15rem;
+}
+
+@each $fondo in imagen1, imagen2, imagen3, imagen4, imagen5, imagen6 {
+    .#{$fondo}{
+        background-image: url("/assets/img/fondos/#{$fondo}.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
