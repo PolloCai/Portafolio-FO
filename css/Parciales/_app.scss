@@ -23,12 +23,12 @@ html {
     position: sticky;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    border-bottom: var(--celeste) solid 0.15rem;
+    border-bottom: var(--rosa) solid 0.15rem;
     padding-left: 4rem;
     padding-right: 4rem;
     padding-top: 1rem;
     top: .001px;
-    box-shadow: var(--boxShadow);
+    box-shadow: var(--boxShadowRosa);
     &--logo img{
         height: 6rem;
         width: 20rem;
@@ -88,11 +88,11 @@ html {
     outline: none;
     border-radius: 0.5rem;
     z-index: 0;
-    background: var(--celSecond);
+    background: var(--rosaR);
     overflow: hidden;
-    border: 0.2rem solid var(--celSecond);
+    border: 0.2rem solid var(--rosaR);
     &:hover {
-        color: var(--celSecond);
+        color: var(--rosaR);
         &:after {
             width: 100%;
         }
@@ -161,16 +161,16 @@ html {
 .img--atras {
     position: relative;
     height: 40rem;
-    max-width: 90%;
+    max-width: 100%;
     border-radius: .5rem;
-    background-image: url(../assets/Ps_overlay_Red_Smoke-\(22\)1.jpg);
+    background-image: url(../assets/yo1.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 80% center;
-    box-shadow: var(--boxShadow);
+    background-size:contain;
+    background-position: 100% center;
 }
 
 .img--delante {
+    box-shadow: var(--boxShadowRosa);
     position: absolute;
     width: 40%;
     height: 40%;
@@ -215,7 +215,7 @@ html {
         font-size: 3.5rem;
         font-family: 'Roboto Mono', monospace;
         height: 10rem;
-        color: var(--blanco);
+        color: var(--rosa);
     }
     &--img {
         width: 10rem;
@@ -248,7 +248,7 @@ html {
 .subtitulo {
     font-family: 'Roboto Mono', monospace;
     font-size: 3rem;
-    color: var(--blancoSecond);
+    color: var(--rosa);
     text-align: center;
 }
 
@@ -407,7 +407,11 @@ html {
         color: var(--blancoSecond);
         & li {
             margin-bottom: 2rem;
+            & i {
+                color: var(--rosa);
+            }
         }
+        
     }
     
 }
@@ -434,7 +438,7 @@ html {
     justify-content: space-between;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-    border-top: var(--celeste) solid 0.15rem;
+    border-top: var(--rosa) solid 0.15rem;
     &--redes {
         margin-left: 3rem;
         padding-left: 1rem;
@@ -494,7 +498,11 @@ html {
     }
 
 }
-
+@media screen and (max-width:620px) {
+    .img--delante {
+        margin-left: 3rem;
+    }
+}
 
 @media screen and (max-width:600px) {
     .contenedor--proyectos {
@@ -558,8 +566,47 @@ html {
 
 }
 
+@media screen and (max-width:575px) {
+    .img--delante {
+        margin-left: 4rem;
+    }
+    
+}
+
 
 @media screen and (max-width:550px) {
+    .main--bienvenidos{
+        height: auto !important;
+    }
+
+    .main--boton {
+        padding-bottom: 4rem;
+    }
+
+
+    .main--titulo {
+        font-size: 5rem;
+        @include reset-pm;
+    }
+
+    .main--texto {
+        font-size: 1.4rem;
+        @include reset-pm;
+    }
+
+    .img--delante {
+        margin-left: 3rem;
+    }
+
+    .main--servicios {
+        padding-top: 8rem;
+    }
+
+    .cards--texto {
+        margin-top: 4rem;
+    }
+
+
     .contenedor--contacto {
         font-size: 2rem;
         flex-flow: column nowrap;
@@ -576,6 +623,7 @@ html {
         flex-direction: column;
         border-radius: 0  0 1rem 1rem;
         padding-left: 1rem;
+        padding-top: 2rem;
 
     }
 
@@ -595,11 +643,25 @@ html {
         width: 100%;
         margin-bottom: 3rem;   
     }
-    
 }
 
 @media screen and (max-width:430px) {
+    .main--bienvenidos{
+        height: auto !important;
+    }
+
+    .main--boton {
+        padding-bottom: 4rem;
+    }
+
+
     .main--titulo {
-        font-size: 5rem;
+        font-size: 4.7rem;
+        @include reset-pm;
+    }
+
+    .main--texto {
+        font-size: 1rem;
+        @include reset-pm;
     }
 }
