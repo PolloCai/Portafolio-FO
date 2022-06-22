@@ -4,57 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fernando Ordoqui | Desarrollo Web</title>
+    <meta name="description" content="Portafolio Web de Fernando Martín Ordoqui">
+    <meta name="keywords"  content="HTML, CSS, PROGRAMACION, FRONTEND, BACKEND, FULLSTACK, DEVELOPER,JAVASCRIPT">
+    <title>Fernando Ordoqui | Servicios</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto+Mono:ital,wght@0,700;1,600&family=Space+Mono&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto+Mono:ital,wght@0,700;1,600&family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/menu.css">
-    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body class="cuerpo">
-    
-    <header class="header">
-        <div class="header--contenedor">
-            <div class="header--logo">
+
+
+    <!-- Header -->
+    <header class="header container-fluid">
+        <div class="header--contenedor row">
+            <div class="header--logo col-12 col-md-3 d-flex justify-content-center">
                 <a href="../index.html"><img src="../assets/logo/logo.png" alt="logo"></a>
             </div>
-            <nav class="header--nav">
-                <ul class="header--ul">
-                    <li><a href="./sobreMi.html" title="Sobre Mi" class="header--links"><span class="icon-wink2"></span> Sobre Mi</a></li>
-                    <li><a href="./servicios.html" title="Servicios" class="header--links"><span class="icon-briefcase"></span>Servicios</a></li>
-                    <li><a href="./proyectos.html" title="Proyectos" class="header--links"><span class="icon-rocket"></span> Proyectos</a></li>
-                    <li><a href="./contacto.html " title="Contacto" class="header--links"><span class="icon-mail3"></span> Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="header--redes">
-                <a href="https://www.facebook.com/pollo.ordoqui/"><img src="../assets/redes/facebook.png" alt="Red Facebook"></a>
-                <a href="https://www.instagram.com/polloordoqui6/"><img src="../assets/redes/instagram.png" alt="Red Instagram"></a>
-                <a href="https://twitter.com/FernandoOrdoqui"><img src="../assets/redes/gorjeo.png" alt="Red Twitter"></a>
-                <a href="https://www.linkedin.com/in/fernando-ordoqui-469057158/"><img src="../assets/redes/linkedin.png" alt="Red Linkedin"></a>
+                <nav class="navbar navbar-expand-md navbar-dark bg-transparent col-12 col-md-6">
+                    <div class="container-fluid d-flex justify-content-center m-0 p-0">
+                        <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse container-fluid m-0 p-0" id="navbarSupportedContent">
+                            <ul class=" header--nav navbar-nav me-auto row d-flex flex-row mt-0 p-0 container-fluid">
+                                <li class="nav-item col-12 col-md-3">
+                                    <a class="nav-link header--links text-center" href="./sobremi.html"><span class="icon-wink2"></span> Sobre Mi</a>
+                                </li>
+                                <li class="nav-item col-12 col-md-3">
+                                    <a class="nav-link header--links text-center" href="./servicios.html"><span class="icon-briefcase"></span> Servicios</a>
+                                </li>
+                                <li class="nav-item col-12 col-md-3">
+                                    <a class="nav-link header--links text-center" href="./proyectos.html"><span class="icon-rocket"></span> Proyectos</a>
+                                </li>
+                                <li class="nav-item col-12 col-md-3">
+                                    <a class="nav-link header--links text-center" href="./contacto.html"><span class="icon-mail3"></span> Contacto</a>
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>    
+                </nav>
+            <div class="header--redes col-12 col-md-3 d-flex flex-row align-items-center justify-content-center ">
+                <a href="https://www.facebook.com/pollo.ordoqui/"><img src="../assets/redes/facebook.png" alt="Red Facebook" class="ms-2"></a>
+                <a href="https://www.instagram.com/polloordoqui6/"><img src="../assets/redes/instagram.png" alt="Red Instagram" class="ms-2"></a>
+                <a href="https://twitter.com/FernandoOrdoqui"><img src="../assets/redes/gorjeo.png" alt="Red Twitter" class="ms-2"></a>
+                <a href="https://www.linkedin.com/in/fernando-ordoqui-469057158/"><img src="../assets/redes/linkedin.png" alt="Red Linkedin" class="ms-2"></a>
             </div>
         </div>
     </header>
-
-    <main class="main">
-        <section>
-            <div class="main--bienvenidos">
-                <h1 class="main--titulo">Servicios</h1>
-                <p class="main--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusantium obcaecati quidem eius. Voluptatem vitae perspiciatis quam esse maxime in, tempora fuga deserunt ipsa veritatis.</p>
+    <main>
+        <section id="servicios" class="servicios container-fluid">
+            <div class="main--servicios col-12">
+                <h2 class="main--titulo main--titulo__Servicios col-12 text-center">Servicios</h2>
+                <p class="main--texto main--texto__Servicios col-12 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quidem aliquid iusto cupiditate ipsam placeat dignissimos, necessitatibus harum! Voluptas, voluptates!</p>
+                <div class="contenedor--servicios container-fluid d-flex row">
+                    <div class="cards mt-5 mt-md-0 col-md-4"> 
+                        <h3 class="cards--subtitulo text-center">Web Design</h3>
+                        <img src="../assets/web-design.png" alt="" class="cards--img">
+                        <p class="main--texto cards--texto text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem et qui illum!</p>
+                    </div>
+                    <div class="cards col-md-4">
+                        <h3 class="cards--subtitulo text-center">Backup y Security</h3>
+                        <img src="../assets/hard-disk.png" alt="" class="cards--img">
+                        <p class="main--texto cards--texto text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi rerum modi iure.</p>
+                    </div>
+                    <div class="cards col-md-4">
+                        <h3 class="cards--subtitulo text-center">Digital Analytics</h3>
+                        <img src="../assets/analisis-de-datos.png" alt="" class="cards--img">
+                        <p class="main--texto cards--texto text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quo repellendus omnis.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
     <footer class="footer">
-        <div class="footer--redes">
+        <div class="footer--redes ">
             <a href="https://www.facebook.com/pollo.ordoqui/"><img src="../assets/redes/facebook.png" alt="Red Facebook"></a>
             <a href="https://www.instagram.com/polloordoqui6/"><img src="../assets/redes/instagram.png" alt="Red Instagram"></a>
             <a href="https://twitter.com/FernandoOrdoqui"><img src="../assets/redes/gorjeo.png" alt="Red Twitter"></a>
             <a href="https://www.linkedin.com/in/fernando-ordoqui-469057158/"><img src="../assets/redes/linkedin.png" alt="Red Linkedin"></a>
         </div>
-        <div>
+        <div class="footer--copy">
             <p>© Copyright 2022 - Fernando Ordoqui</p>
         </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
+
